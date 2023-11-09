@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Color de fondo de la página */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0070c0; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 20px; /* Tamaño del logo */
+    height: 20px;
+}
+
+.nombre-pagina {
+    font-size: 28px; /* Tamaño del texto del nombre de la página */
+    font-weight: bold;
+}
