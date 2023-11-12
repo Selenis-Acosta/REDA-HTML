@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Salto de Página</title>
     <style>
-        /* Estilos para la línea divisoria */
-        hr {
-            border: none; /* Elimina el borde predeterminado de la línea */
-            height: 122px; /* Altura de la línea */
-            background-color: #000; /* Color de la línea (en este caso, negro) */
+        .salto-de-pagina {
+            page-break-before: always; /* o page-break-after: always; */
         }
     </style>
 </head>
 <body>
-    <p>Primer texto</p>
-    <hr>
-    <p>Segundo texto</p>
+    <div>
+        <p>Contenido de la primera página.</p>
+    </div>
+
+    <div class="salto-de-pagina">
+        <!-- Esta div empezará en una nueva página -->
+        <p>Contenido de la segunda páginqwertyuijhgfewsdfghjhgfdewsdfgnbvcdfghjhgfddfghjhgfddfghjkjhgreghjjhgfdfghjjhgfdfghjkjhgfdfghjkjhgfddfghjjhgfdsfghjjhgfdsfghjjhgfdsdfghjkjhgfda.</p>
+    </div>
 </body>
 </html>

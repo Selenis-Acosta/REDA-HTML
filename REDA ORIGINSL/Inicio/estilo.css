@@ -2,7 +2,6 @@
     padding: 0px;
     margin: 0px;
 }
-
 .titulo {
     font-family: 'Exo 2', sans-serif;
     padding: 5px 80px;
@@ -16,7 +15,6 @@
     padding-top: 20px; 
     text-align: left;
 }
-
 .elemento {
     color: #000000;
     padding: 10px;
@@ -107,15 +105,71 @@ img img {
 }
 .contenedor-padre1 {
     display: flex;
+    height: auto;
+    width: 900px;
+    position: center;
 }
 .box1 {
-    height: 588px;
+    height: 508px;
     width: 450px;   
 }
 .imagen1 {
     padding: 0% 0% 0% 17%;
     position: relative;
+    height: 10px;
+    width: 450px;
+    filter: brightness(3);
+}
+.box2 {
+    position: relative;
     height: 20px;
     width: 450px;
 }
-
+.obj {
+    padding: 10px;
+    font-family:'Exo 2', sans-serif;
+    font-size: 60px;
+    color: green;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);   
+}
+.objetivog {
+    padding: 0px 0px 0px 25px;
+    font-size: 25px;
+    font-family:'Exo 2', sans-serif;
+    color: rgb(8, 88, 88);
+}
+.contenedor {
+    display: flex;
+}
+.cont {
+    padding: 10px;
+}
+.com {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+.h2 {
+    padding: 10px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 60px;
+    color: green;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.ul{
+    padding: 20px;
+    position: relative; top:0px; left: 20px;
+}
+.desvanecer {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}  
+.desvanecer:hover {
+    opacity: 1;
+}
+.li {
+    padding: 10px;
+}
+.salto-de-pagina {
+    page-break-before: always; /* o page-break-after: always; */
+}
