@@ -1,0 +1,13 @@
+.texto_oculto {
+    visibility: hidden;
+  }
+  
+  .texto1:hover + .texto_oculto {
+    visibility: visible;
+  }
+  
+  .texto1:hover + .texto_oculto + .contenido_abajo {
+    margin-top: 20px; /* Otra forma de mover el contenido hacia abajo */
+    transition: margin-top 0.5s ease-in-out;
+  }
+  

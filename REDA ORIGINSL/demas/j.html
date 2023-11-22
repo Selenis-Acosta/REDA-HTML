@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de Salto de Página</title>
-    <style>
-        .salto-de-pagina {
-            page-break-before: always; /* o page-break-after: always; */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <p>Contenido de la primera página.</p>
-    </div>
-
-    <div class="salto-de-pagina">
-        <!-- Esta div empezará en una nueva página -->
-        <p>Contenido de la segunda páginqwertyuijhgfewsdfghjhgfdewsdfgnbvcdfghjhgfddfghjhgfddfghjkjhgreghjjhgfdfghjjhgfdfghjkjhgfdfghjkjhgfddfghjjhgfdsfghjjhgfdsfghjjhgfdsdfghjkjhgfda.</p>
-    </div>
+    <div class="contenedor">
+        <p class="texto1">Texto que aparece</p>
+        <p class="texto_oculto">Texto oculto</p>
+        <p class="contenido_abajo">Contenido que se mueve</p>
+      </div>
+      
 </body>
 </html>
