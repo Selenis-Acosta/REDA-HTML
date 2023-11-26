@@ -49,17 +49,6 @@
     font-family: 'Exo 2', sans-serif;
     color: green;
 }
-.logo {
-    margin-right: 20px;
-    background-color: #d6dadd;
-    align-items: center;
-    width: 45px;
-}
-.logo img {
-    width: 40px; 
-    height: auto;
-    
-}
 .navegacion a {
     text-decoration: none;
     color: rgb(0, 0, 0);
