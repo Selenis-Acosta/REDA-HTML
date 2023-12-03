@@ -1,17 +1,34 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Salto de Página</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="contenedor">
-        <p class="texto1">Texto que aparece</p>
-        <p class="texto_oculto">Texto oculto</p>
-        <p class="contenido_abajo">Contenido que se mueve</p>
-      </div>
-      
-</body>
-</html>
+<style>
+    .contenedor-padre1 {
+      display: flex;
+      /* Puedes ajustar aquí la alineación y distribución según tu diseño */
+    }
+  
+    .imagen1 {
+      padding: 20px;
+      max-width: 200px; /* Cambia este valor según tus necesidades */
+      width: 100%;
+      height: auto;
+      margin-right: 20px; /* Solo para separar la imagen del texto, ajusta según tu diseño */
+    }
+    .imagen1 img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .box1 {
+      flex-grow: 1; /* Para que ocupe el espacio restante */
+    }
+  </style>
+  
+  <div class="contenedor-padre1">
+    <div class="imagen1">
+      <img src="C:\Users\57324\Music\REDA-HTML\REDA ORIGINSL\imagenes\_35b384b5-383f-455b-b967-4f1781e6e53d.jfif" alt="">
+    </div>
+    <div class="box1">
+      <h2 class="obj">Objetivo General</h2>
+      <br>
+      <p class="objetivog">Desarrollar las habilidades matemáticas de multiplicación de los estudiantes de cuarto grado a través de un proyecto educativo interactivo y entretenido.</p> 
+    </div>
+  </div>
+  

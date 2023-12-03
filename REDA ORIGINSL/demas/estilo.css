@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header h1 {
+padding-top: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.navegacion {
+    background-color: black;
+    height: 36px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+}
+.contenedor {
+    display: flex;
+}
+.contenedor aside{
+    width: 30%;
+    background-color: rgb(119, 114, 114);
+    height: 500px;
+}
+.contenedor main{
+    width: 70%;
+    background-color: rgb(80, 78, 78);
+}
+.contenedor aside p {
+    padding: 10px;
+}
+.contenedor main p {
+    padding: 10px;
+}
+.contenedor article {
+    padding: 10px;
+} 
+footer {
+    text-align: center;
+    padding: 10px;
+}

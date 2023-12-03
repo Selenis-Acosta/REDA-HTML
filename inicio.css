@@ -2,11 +2,16 @@
     padding: 0px;
     margin: 0px;
 }
+.fondo {
+   background-color: #ADB7E9;
+   background-image: linear-gradient(to right, #6F83F3, #bddef1);
+}
+
 .titulo {
     font-family: 'Exo 2', sans-serif;
     padding: 5px 80px;
     font-size: 60px;
-    color: green;
+    color: #24467E;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-weight: bold;
@@ -16,19 +21,18 @@
     text-align: left;
 }
 .elemento {
-    color: #000000;
+    color: #000;
     padding: 10px;
     font-family: 'Exo 2', sans-serif;
     font-size: 17px;
     transition: background-color 0.5s, color 0.5s;
 }
-
 .elemento:hover {
     font-family: 'Exo 2', sans-serif;
-    color: green;
+    color: #4281BD;
 }
 .navegacion {
-    background-color: #d6dadd;
+    background-color: #E9EBF0;
     height: 70px;
     text-align: left;
     display: flex;
@@ -37,7 +41,6 @@
     flex: 2;
 }
 .nombre {
-    background-color: #d6dadd;
     font-size: 25px;
     height: 70px;
     text-align: left;
@@ -46,23 +49,23 @@
     justify-content: space-between;
     position: left;
     flex: 1.2;
-    font-family: 'Exo 2', sans-serif;
-    color: green;
+    font-family: 'Exo 2', sans-serif; 
+    background-color: #E9EBF0; 
+    color: #24467E;
 }
 .navegacion a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #000; 
     padding: 14px;
 }
-img {
+.imgenuni {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 90vh;
-    filter: brightness(0.4);
+    filter: brightness(110%) saturate(100%) hue-rotate(180deg);
 }
-
 img img {
     max-width: 100%;
     max-height: 100%;
@@ -79,8 +82,8 @@ img img {
 .h31 {
     font-family: 'Exo 2', sans-serif;
     padding: 5px 80px;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
+    font-size: 25px;
+    color: black;
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-weight: bold;
@@ -88,27 +91,39 @@ img img {
     position: static;
     padding-top: 20px;
     text-align: left;
+    width: 10%;
 }
 .contenedor-padre {
     display: flex;
 }
 .contenedor-padre1 {
     display: flex;
-    height: auto;
+    justify-content: center; 
+    align-items: center; 
     width: 900px;
-    position: center;
+    height: 100%; 
+    margin: 0 auto; 
+    text-align: left; 
 }
+
 .box1 {
-    height: 508px;
-    width: 450px;   
+    flex-grow: 1;
+    padding: 0 20px;
+    max-width: 50%; 
 }
 .imagen1 {
-    padding: 0% 0% 0% 17%;
-    position: relative;
-    height: 10px;
-    width: 450px;
-    filter: brightness(3);
+    width: 50%; 
+    max-width: 40000px; 
+    flex-shrink: 0; 
+    filter: brightness(1);
 }
+
+.imagen1 img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+}
+
 .box2 {
     position: relative;
     height: 20px;
@@ -118,7 +133,7 @@ img img {
     padding: 10px;
     font-family:'Exo 2', sans-serif;
     font-size: 60px;
-    color: green;
+    color: rgb(53, 196, 53);
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);   
 }
 .objetivog {
@@ -142,26 +157,20 @@ img img {
     padding: 10px;
     font-family: 'Exo 2', sans-serif;
     font-size: 60px;
-    color: green;
+    color: rgb(53, 196, 53);
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 .ul{
     padding: 20px;
     position: relative; top:0px; left: 20px;
 }
-.desvanecer {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}  
-.desvanecer:hover {
-    opacity: 1;
-}
+
 .li {
     padding: 10px;
     color: rgb(8, 88, 88);
 }
 .salto-de-pagina {
-    page-break-before: always; /* o page-break-after: always; */
+    page-break-before: always; 
 }
 article { 
     text-align: justify;
@@ -171,15 +180,14 @@ padding: 20px;
 background: #1c1397;
 margin-bottom: 20px;
 border-radius: 15px;
-background-image: linear-gradient(to right, rgb(111, 131, 243),white);
-box-shadow: 5px 5px 5px gray;
+background-image: linear-gradient(to right, #6F83F3, #bddef1);
 font-size: 18px;
 }
 .h3 {
     padding: 10px;
     font-family: 'Exo 2', sans-serif;
     font-size: 40px;
-    color: green;
+    color: rgb(53, 196, 53);
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 .box2 {
@@ -188,4 +196,43 @@ font-size: 18px;
     margin-bottom: 20px;
     border-radius: 15px;
     font-size: 18px;
+}
+.boton {
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+    color: rgb(66, 129, 189);
+    font-size: 20px;
+}
+  .imgta {
+    padding: 10px;
+    width: 50%;
+    height: 438px;
+    display: flex;
+    margin: 0 auto; 
+    text-align: left; 
+}
+.imgta2 {
+    padding: 10px;
+    width: 50%;
+    height: 438px;
+    display: flex;
+    margin: 0 auto; 
+    text-align: left; 
+}
+.contenedor {
+    display: flex;
+}
+.contenedor aside{
+    width: 30%;
+    height: auto;
+}
+.contenedor main{
+    width: 70%;
+    height: 100%;
+}
+.contenedor aside p {
+    padding: 10px;
+}
+.contenedor main p {
+    padding: 10px;
 }
