@@ -1,69 +1,64 @@
-var salida='';
-function calificacion(){
-    var nombre= (document.getElementById('nombre').value)
-    var apellido= (document.getElementById('apellido').value)
-    var nota1= parseInt(document.getElementById('nota1').value);
-    var nota2= parseInt(document.getElementById('nota2').value);
-    var nota3= parseInt(document.getElementById('nota3').value);
-    listarNumero(nombre, apellido, nota1, nota2, nota3);
-    limpiarCajas();
-}
-function limpiarCajas() {
-    document.getElementById('nombre').value="";
-    document.getElementById('apellido').value="";
-    document.getElementById('nota1').value="";
-    document.getElementById('nota2').value="";
-    document.getElementById('nota3').value="";
-    document.getElementById('nombre').focus(); 
-}
-function listarNumero(nombre, apellido, nota1, nota2, nota3) {
-    salida+='<tr><td>'+nombre+'</td><td>'+apellido+'</td><td>'+nota1+'</td><td>'+nota2+'</td><td>'+nota3+'</td><td>'
-    +promedio(nota1, nota2, nota3)+'</td><td>'+valoracion(nota1, nota2, nota3)+'</td><td>'
-    +rendimiento(nota1, nota2, nota3)+'</td></tr>'
-    document.getElementById('cuerpo').innerHTML=salida;
-}
-function promedio(nota1, nota2, nota3) {
-    prom=(nota1 + nota2 + nota3) / 3;
-    if (prom < 3) {
-        text= '<p style="color: red;">'+prom+'</p>';
-    }
-    else {
-        text= '<p style="color: blue;">'+prom+'</p>';
-    }
-    return text;
-  }
-function valoracion(nota1, nota2, nota3) {
-    pro=(nota1 + nota2 + nota3) / 3; 
-    if (pro < 3) {
-        text1= '<p style="color: red;">Reprobo</p>';
-    }
-    else {
-        text1= '<p style="color: blue;">Aprobo</p>';
-    }
-    return text1;
-}
-function rendimiento(nota1, nota2, nota3) {
-    let pro1=(nota1 + nota2 + nota3) / 3;
-    let mayor=""; 
-    if (pro1<2) {
-        mayor= '<p style="color: red;">Insuficiente</p>';
-    } else {
-        if (pro1<3) {
-            mayor= '<p style="color: red;">Deficiente</p>';
-        } else 
-            if (pro1<3.5) {
-                mayor= '<p style="color: Blue;">Aceptabel</p>';
-            } else 
-                if (pro1<4) {
+var salida="";
+function calificacion() {
+    let nota = 0;
+    let Pregunta1 = parseInt(document.getElementById('Pregunta1').value);
+    let Pregunta2 = parseInt(document.getElementById('Pregunta2').value);
+    let Pregunta3 = parseInt(document.getElementById('Pregunta3').value);
+    let Pregunta4 = parseInt(document.getElementById('Pregunta4').value);
+    let Pregunta5 = parseInt(document.getElementById('Pregunta5').value);
+    let Pregunta6 = parseInt(document.getElementById('Pregunta6').value);
+    let Pregunta7 = parseInt(document.getElementById('Pregunta7').value);
+    let Pregunta8 = parseInt(document.getElementById('Pregunta8').value);
+    let Pregunta9 = parseInt(document.getElementById('Pregunta9').value);
+    let Pregunta10 = parseInt(document.getElementById('Pregunta10').value);
+    if (Pregunta1==1752) {
+        nota++;
+     }
+     if (Pregunta2==18104) {
+        nota++;
+     }
+     if (Pregunta3==82075) {
+        nota++;
+     }
+     if (Pregunta4==300) {
+        nota++;
+     }
+     if (Pregunta5==3840) {
+        nota++;
+     }
+     if (Pregunta6==2310) {
+        nota++;
+     }
+     if (Pregunta7==49560) {
+        nota++;
+     }
+     if (Pregunta8==659) {
+        nota++;
+     }
+     if (Pregunta9==235) {
+        nota++;
+     }
+     if (Pregunta10==1) {
+        nota++;
+     }
+    // Aquí se calcula la calificación pero falta mostrar los resultados en la página
+    mostrarResultados(nota, Pregunta1, Pregunta2, Pregunta3, Pregunta4, Pregunta5, Pregunta6, Pregunta7, Pregunta8, Pregunta9, Pregunta10);
+ }
  
-                    mayor= '<p style="color: blue;">Bueno</p>';
-                } else 
-                    if (pro1<4.5) {
-                        mayor= '<p style="color: blue;"Sobresaliente</p>';
-                    } else 
-                        if (pro1<=5) {
-                            mayor= '<p style="color: blue;">Excelente</p>';
-                        }
-            }
-    return mayor;
-}
+ function mostrarResultados(nota, Pregunta1, Pregunta2, Pregunta3, Pregunta4, Pregunta5, Pregunta6, Pregunta7, Pregunta8, Pregunta9, Pregunta10) {
+    var salida = '<table>';
+    salida += '<tr><td>' + respuesta(respuestaPregunta1, 1752) + '</td><td>' + respuesta(respuestaPregunta2, 18104) + '</td></tr>';
+    // Aquí se agregan el resto de las preguntas a la tabla
+ 
+    salida += '</table>';
+    document.getElementById('nota').innerHTML = salida;
+ }
+ 
+ function respuesta(respuestaUsuario, respuestaCorrecta) {
+    if (respuestaUsuario === respuestaCorrecta) {
+       return '<p style="color: green;">' + respuestaCorrecta + ', la respuesta es correcta</p>';
+    } else {
+       return '<p style="color: red;">' + respuestaUsuario + ', la respuesta es incorrecta, la respuesta correcta es <span style="color: green;">' + respuestaCorrecta + '</span></p>';
+    }
+ }
+ 
