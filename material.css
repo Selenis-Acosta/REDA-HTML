@@ -1,7 +1,6 @@
-body {
-    font-family: 'Exo 2', sans-serif;
-    color: black;
-    margin: 0;
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
 .fondo {
@@ -9,61 +8,131 @@ body {
     background-image: linear-gradient(to right, #6F83F3, #bddef1);
 }
 
-.contenedor-padre {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.elemento {
+    color: #000000;
     padding: 10px;
-    background-color: #E9EBF0;
-    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 17px;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-.nombre h1 {
-    margin: 0;
-    font-weight: bold;
-    color: #4281BD;
+.elemento:hover {
+    font-family: 'Exo 2', sans-serif;
+    color: green;
 }
 
 .navegacion {
+    background-color: #d6dadd;
+    height: 110px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 2;
+}
+
+.nombre {
+    background-color: #d6dadd;
+    font-size: 25px;
+    height: 110px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: left;
+    flex: 1.2;
+    font-family: 'Exo 2', sans-serif;
+    color: green;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 14px;
+}
+
+.contenedor-padre {
     display: flex;
 }
 
-.elemento {
-    margin: 0 10px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+h2 {
+    color: #008080;
+}
+
+h1 {
+    color: #008080;
+    border-bottom: 2px solid #008080;
+    padding-bottom: 10px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
 .contenedor {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    align-items: stretch;
 }
 
-aside {
-    width: 20%;
+.contenedor aside {
+    padding: 5px;
+    width: 15%;
+    height: 100vh;
 }
 
-main {
-    width: 70%;
+.contenedor main {
+    width: 85%;
 }
 
-h1, h2 {
-    color: black;
+.contenedor aside p {
+    padding: 10px;
 }
 
-h1 {
+.contenedor main p {
+    padding: 10px;
+}
+
+.contenedor article {
+    padding: 10px;
+}
+
+footer {
     text-align: center;
-    font-weight: bold;
-    color: #4281BD;
+    padding: 10px;
 }
 
-h2 {
-    text-align: center;
+.imgta {
+    padding: 10px;
+    width: 90%;
+    height: 200px;
 }
 
-img.imgta {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+/* Estilo para el juego de Educaplay */
+main iframe {
+    margin-top: 20px; /* Ajuste de margen superior */
+    border: 2px solid #008080; /* Borde alrededor del iframe */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Estilo para los botones de enlace */
+.boton-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px; /* Ajuste de margen a la derecha */
+    background-color: #008080;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-enlace:hover {
+    background-color: #006666;
+}
+
+/* Espacio entre los elementos de la sección de recursos */
+.recursos .recurso {
+    margin-bottom: 20px; /* Ajuste de margen inferior */
 }
