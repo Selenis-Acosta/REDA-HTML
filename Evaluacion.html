@@ -7,8 +7,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="matematicas.png" />
     <title>Evaluacion</title>
     <link rel="stylesheet" href="Evaluacion.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body class="fondo">
         <header>
@@ -21,16 +23,17 @@
                     <a class="elemento" href="Inicio.html">Inicio</a>
                     <a class="elemento" href="Contenido.html">Contenido</a>
                     <a class="elemento" href="actividades.html">Actividades</a>
-                    <a class="elemento" href="material.html">Material complementario</a>
-                    <a class="elemento" href="evaluacion.html">Evaluación</a>
+                    <a class="elemento" href="material.html">Material Complementario</a>
                     <a class="elemento" href="credito.html">Crédito</a>
                 </div>
         </div>
+        </div>
     </header>
     <br>
-    <center><h1 class="ti">Responda el siguiente cuestionario</h1></center>
+    <div class="container mt-4">
+    <center><h1 class="text-center mb-4">Responda el siguiente cuestionario</h1></center>
     <br><br>
-    <center><table border="3" style="background-color: rgb(123, 216, 70);">
+    <center><table class="table table-bordered table-striped mt-4">
         <tr>
         <td class="td"><h1>1.</h1>¿Cuantos es 146*12?</td>
             <td><input type="text" id="Pregunta1" placeholder="Escriba su respuesta" class="place"  autofocus></td>
@@ -45,64 +48,64 @@
         </tr>
     </table>
     <br>   
-    <form action="">
-        <div>
-            <label>4. Si en una granja hay 15 filas de árboles frutales y en cada fila hay 20 árboles,<br> ¿cuántos árboles hay en total?</label>
-            <select id="Pregunta4">
+    <form action="" class="p-4 border">
+        <div class="form-group">
+            <label class="font-weight-bold">4. Si en una granja hay 15 filas de árboles frutales y en cada fila hay 20 árboles,<br> ¿cuántos árboles hay en total?</label>
+            <select id="Pregunta4" class="form-control">
             <option>300</option>
             <option>402</option>
             <option>298</option>
         </select>    
         </div>
         <br>
-        <div>
-            <label>5. Si una caja tiene 240 paquetes de juguetes y hay 16 cajas en total, <br>¿cuántos paquetes de juguetes hay en total?</label>
-            <select id="Pregunta5">
+        <div class="form-group">
+            <label class="font-weight-bold">5. Si una caja tiene 240 paquetes de juguetes y hay 16 cajas en total, <br>¿cuántos paquetes de juguetes hay en total?</label>
+            <select id="Pregunta5" class="form-control">
             <option>3022</option>
             <option>3840</option>
             <option>3841</option>
         </select>    
         </div>
         <br>
-        <div>
-            <label>6. Si una fábrica produce 210 autos cada mes y funciona durante 11 meses al año, <br>¿cuántos autos produce en total durante ese tiempo?</label>
-            <select id="Pregunta6">
+        <div class="form-group">
+            <label class="font-weight-bold">6. Si una fábrica produce 210 autos cada mes y funciona durante 11 meses al año, <br>¿cuántos autos produce en total durante ese tiempo?</label>
+            <select id="Pregunta6" class="form-control">
             <option>1856</option>
             <option>1269</option>
             <option>2310</option>
         </select>    
         </div>
         <br>
-        <div>
-            <label>7. Si una tienda vende 2360 camisetas cada semana y está abierta durante 21 semanas seguidas, <br>¿cuántas camisetas vende en total durante ese período?</label>
-            <select id="Pregunta7">
+        <div class="form-group">
+            <label class="font-weight-bold">7. Si una tienda vende 2360 camisetas cada semana y está abierta durante 21 semanas seguidas, <br>¿cuántas camisetas vende en total durante ese período?</label>
+            <select id="Pregunta7" class="form-control">
             <option>48941</option>
             <option>50246</option>
             <option>49560</option>
         </select>    
         </div>
         <br>
-        <div>
-            <label>8. Si X*13=8567, ¿Cuanto vale X?</label>
-            <select id="Pregunta8">
+        <div class="form-group">
+            <label class="font-weight-bold">8. Si X*13=8567, ¿Cuanto vale X?</label>
+            <select id="Pregunta8" class="form-control">
             <option>659</option>
             <option>352</option>
             <option>1001</option>
         </select>    
         </div>
         <br>
-        <div>
-            <label>9. Si X*235=55225, ¿Cuanto vale X?</label>
-            <select id="Pregunta9">
+        <div class="form-group">
+            <label class="font-weight-bold">9. Si X*235=55225, ¿Cuanto vale X?</label>
+            <select id="Pregunta9" class="form-control">
             <option>342</option>
             <option>235</option>
             <option>217</option>
         </select>    
         </div>
         <br>
-        <div>
-            <label>10. Si X*1231=1231, ¿Cuanto vale X?</label>
-            <select id="Pregunta10">
+        <div class="form-group">
+            <label class="font-weight-bold">10. Si X*1231=1231, ¿Cuanto vale X?</label>
+            <select id="Pregunta10" class="form-control">
             <option>1</option>
             <option>10</option>
             <option>0</option>
@@ -110,10 +113,10 @@
         </div>
     </form>
     <br>
-    <button onclick="calificacion()">Calificacion</button>
+    <button class="btn btn-dark btn-block mt-4" onclick="calificacion()">Calificacion</button>
     <br>
     <br>
-    <table border="3" style="background-color: rgb(123, 216, 70);">
+    <table class="table table-bordered table-striped mt-4">
         <th>1.</th>
         <th>2.</th>
         <th>3.</th>
@@ -126,6 +129,7 @@
         <th>10.</th>
         <th>Calificacion Final.</th>
         <tbody id="nota"></tbody> 
+    </div>
     </table>
 </center>
 </body>
